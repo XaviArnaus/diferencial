@@ -42,7 +42,7 @@ class Publisher:
         self._mastodon = MastodonHelper.get_instance(
             connection_params=self._connection_params, logger=self._logger, base_path=base_path
         )
-    
+
     def _post_media(self, media_file: str, description: str) -> dict:
         try:
             downloaded = Media().download_from_url(media_file, self._media_storage)
@@ -51,7 +51,7 @@ class Publisher:
             )
         except Exception as e:
             self._logger.exception(e)
-    
+
     def publish_text(self, text: str) -> dict:
         return self.publish_status_post(
             status_post=StatusPost(

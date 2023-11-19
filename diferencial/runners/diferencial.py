@@ -1,9 +1,6 @@
 from pyxavi.config import Config
-from pyxavi.janitor import Janitor
-from pyxavi.debugger import full_stack
 from pyxavi.terminal_color import TerminalColor
 from diferencial.runners.runner_protocol import RunnerProtocol
-from definitions import ROOT_DIR
 import logging
 
 
@@ -29,7 +26,7 @@ class Diferencial(RunnerProtocol):
         Set the behaviour in the config.yaml
         '''
         self._logger.info(f"{TerminalColor.MAGENTA}Main Diferencial run{TerminalColor.END}")
-        
+
         # self._logger.info(
         #     f"{TerminalColor.YELLOW}Getting data{TerminalColor.END}"
         # )
