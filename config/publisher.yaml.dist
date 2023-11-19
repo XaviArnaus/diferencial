@@ -1,0 +1,12 @@
+###########################
+#     Diferencial Bot     #
+###########################
+
+publisher:
+# [String] Where to download the media to
+  media_storage: "storage/media/"
+  # [Bool] Performs a dry run: the queue is untouched and no re-publish is really done
+  #   Check the logs/stdout to see the results
+  dry_run: True
+  # [String] Named account to use
+  named_account: "default"
