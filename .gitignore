@@ -1,0 +1,24 @@
+# Python stuff
+**/__pycache__/
+
+# No secrets nor sessions
+*.secret
+*.session
+
+# Logs
+log/*
+
+# No user files
+storage/*.yaml
+storage/media/*
+!**/.keep
+
+# No user config files
+config.yaml
+config/*.yaml
+
+# No coverage
+.coverage
+
+# No Mac Stuff
+.DS_Store
